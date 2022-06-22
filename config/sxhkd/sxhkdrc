@@ -1,0 +1,119 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	alacritty
+
+# program launcher
+super + space 
+	rofi -show
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# screenshots
+#
+
+# full screenshot
+super + Print
+	maim ~/Pictures/Screenshots/screenshot_$(date +%Y%m%d_%H%M%S).png
+
+# rectangular screenshot
+super + shift + Print
+	maim -s ~/Pictures/Screenshots/screenshot_$(date +%Y%m%d_%H%M%S).png 
+
+#
+# media keys
+#
+
+# volume controls
+{_,ctrl} + XF86AudioRaiseVolume
+	amixer -c 2 set PCM {3db+,1db+}
+{_,ctrl} + XF86AudioLowerVolume
+	amixer -c 2 set PCM {3db-,1db-}
+
+# mute volume
+XF86AudioMute
+	amixer -c 2 set PCM toggle
+
+# play/pause
+XF86AudioPlay
+	playerctl play-pause
+XF86AudioNext
+	playerctl next
+XF86AudioPrev
+	playerctl previous
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
+super + shift + {q,r}
+	bspc {quit,wm -r}
+
+# close 
+super + shift + c
+	bspc node -c
+alt + F4
+	bspc node -c
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+#
+# state/flags
+#
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# focus on the next/previous desktop
+super + {Right, Left}
+	bspc desktop -f {next,prev}
+
+#
+# preselect
+#
+
+# preselect the direction
+super + ctrl + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+#
+# move/resize
+#
+
+# expand/contract window
+super + ctrl + {h,j,k,l}
+	bspc node -z {left -20 0 || bspc node -z right -20 0, \
+		bottom 0 20 || bspc node -z top 0 20,\
+		top 0 -20 || bspc node -z bottom 0 -20,\
+		right 20 0 || bspc node -z left 20 0}
+

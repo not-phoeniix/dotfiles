@@ -1,0 +1,19 @@
+#! /bin/sh
+
+# workspaces
+bspc monitor -d I II III IV V
+
+#other stuff
+bspc config border_width              3
+bspc config window_gap                20
+bspc config split_ratio               0.6
+bspc config pointer_motion_interval   7
+
+# autostart?
+pgrep -x sxhkd > /dev/null || sxhkd &
+picom &
+xrandr --output HDMI-0 --mode 2560x1440 --rate 143.91 &
+feh --bg-fill $HOME/Pictures/Wallpapers/gihapeghvmy61.png
+
+# start polybar
+$HOME/.config/polybar/launch.sh
