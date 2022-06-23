@@ -10,6 +10,10 @@ super + Return
 super + space 
 	rofi -show
 
+# show pavucontrol
+super + shift + s
+	pavucontrol
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -32,9 +36,9 @@ super + shift + Print
 
 # volume controls
 {_,ctrl} + XF86AudioRaiseVolume
-	amixer -c 2 set PCM {3db+,1db+}
+	amixer -c 2 set PCM {3db+,1db+} && canberra-gtk-play -i audio-volume-change
 {_,ctrl} + XF86AudioLowerVolume
-	amixer -c 2 set PCM {3db-,1db-}
+	amixer -c 2 set PCM {3db-,1db-} && canberra-gtk-play -i audio-volume-change
 
 # mute volume
 XF86AudioMute

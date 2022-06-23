@@ -13,7 +13,8 @@ bspc config pointer_motion_interval   7
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
 xrandr --output HDMI-0 --mode 2560x1440 --rate 143.91 &
-feh --bg-fill $HOME/Pictures/Wallpapers/gihapeghvmy61.png
+xsetroot -cursor_name left_ptr &
+feh --bg-fill --geometry +0-700 $HOME/Pictures/Wallpapers/IMG_20200905_193324.jpg
 
 # start polybar
 $HOME/.config/polybar/launch.sh
