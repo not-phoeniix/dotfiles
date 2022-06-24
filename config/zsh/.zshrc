@@ -23,7 +23,7 @@ prompt pure
 alias ls='ls --color=auto'
 alias up='cd ..'
 alias e='exit'
-alias rm='rm -i'
+#alias rm='rm -i'
 
 # pfetch
 pfetch

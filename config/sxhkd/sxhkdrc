@@ -110,6 +110,10 @@ super + ctrl + {Left,Down,Up,Right}
 super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
 
+# cancel preselection
+super + ctrl + Return
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
 #
 # move/resize
 #

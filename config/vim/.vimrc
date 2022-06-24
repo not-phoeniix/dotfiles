@@ -19,7 +19,7 @@ Plugin 'valloric/youcompleteme'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'gorodinskiy/vim-coloresque'
+Plugin 'ap/vim-css-color'
 
 "all the plugins must go before this line, this deinitializes vundle
 call vundle#end()
