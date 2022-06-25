@@ -10,10 +10,6 @@ super + Return
 super + space 
 	rofi -show
 
-# show pavucontrol
-super + shift + s
-	pavucontrol
-
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -93,6 +89,10 @@ super + {_,shift + }{h,j,k,l}
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# send to next/previous desktop
+super + shift + {Right,Left}
+	bspc node -d {next,prev}
 
 # focus on the next/previous desktop
 super + {Right, Left}

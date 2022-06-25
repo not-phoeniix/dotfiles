@@ -20,6 +20,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ap/vim-css-color'
+Plugin 'arcticicestudio/nord-vim'
 
 "all the plugins must go before this line, this deinitializes vundle
 call vundle#end()
