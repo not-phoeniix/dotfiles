@@ -22,8 +22,9 @@ prompt pure
 # aliases
 alias ls='ls --color=auto'
 alias up='cd ..'
-alias e='exit'
+alias q='exit'
 alias tty-clock='tty-clock -c -C 4'
 
 # pfetch
 pfetch
+export PATH=$PATH:/home/nikki/.spicetify

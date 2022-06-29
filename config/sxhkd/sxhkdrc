@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + space 
-	rofi -show
+	rofi -show run 
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -60,6 +60,8 @@ super + shift + {q,r}
 super + shift + c
 	bspc node -c
 alt + F4
+	bspc node -c
+super + q
 	bspc node -c
 
 # alternate between the tiled and monocle layout

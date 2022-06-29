@@ -1,1 +1,14 @@
-@theme "/usr/share/rofi/themes/android_notification.rasi"
+@theme "nord"
+
+configuration {
+  modi: "window,drun,run,ssh";
+
+  //font: "DejaVuSansMono Nerd Font";
+  //opacity: 80;
+  lines: 10;
+  
+  terminal: "alacritty";
+  show-icons: true;
+
+  sidebar-mode: true;
+}
