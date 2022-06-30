@@ -19,7 +19,8 @@ xsetroot -cursor_name left_ptr &
 feh --bg-fill --geometry +0-0 $HOME/Pictures/Wallpapers/mountainssss.jpg &
 
 # start polybar
-$HOME/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh &
 
-# start openrgb (after everything)
-# openrgb --startminimized
+# start openrgb 
+$HOME/.config/OpenRGB/launch.sh
+ 
