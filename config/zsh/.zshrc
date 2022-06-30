@@ -23,6 +23,7 @@ prompt pure
 alias ls='ls --color=auto'
 alias up='cd ..'
 alias q='exit'
+alias c='clear'
 alias tty-clock='tty-clock -c -C 4'
 
 # pfetch
