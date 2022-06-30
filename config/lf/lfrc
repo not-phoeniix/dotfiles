@@ -1,0 +1,41 @@
+# shell things
+set shell sh
+set shellopts '-eu'
+set ifs "\n"
+
+# other things ig
+set color256 true
+set drawbox true
+set icons true
+
+# leave some space at the top and the bottom of the screen
+set scrolloff 10
+
+# make sure trash folder exists
+%mkdir -p ~/.trash
+
+# move current file or selected files to trash folder
+cmd trash %set -f; mv $fx ~/.trash
+
+# yeah please don't delete this,
+# it's what opens files correctly
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$f";;
+        video/*|image/*/application/pdf) xdg-open "$f" & disown;;
+        *) xdg-open "$f" ;;
+   esac
+}}
+
+# q
+cmd q quit
+
+# custom keybinds
+map <enter> shell
+map <delete> trash
+map <f-12> delete
+
+map gd cd ~/Downloads
+map gt cd ~/.trash
+map gc cd ~/.config
+map g. cd ~/.dotfiles

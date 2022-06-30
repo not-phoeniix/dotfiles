@@ -4,6 +4,7 @@ I hope you find this useful!
 
 -Text-
 vim - text editor
+https://hea-www.harvard.edu/~fine/Tech/vi.html - vi bindings list from harvard.edu
 
 -GRUB Stuff-
 sudo grub-mkconfig -o /boot/grub/grub.cfg
@@ -13,13 +14,11 @@ spt - spotify-tui client
 spotifyd - configure the spotifyd backend thingy
 
 -Wifi-
-nmcli - Network Manager CLI
-nmcli device wifi connect SSID password PASSWORD - should theoretically allow me to connect to wifi thingies but it doesn't want to work rn :/
+connmanctl - connection manager control in terminal
 
 -Packages-
-pikaur - aur helper
 yay - aur helper
-pacman - package manager
+pacman - you know what this is
 'pacman -Qtdq | pacman -Rns -' - remove orphans
 'pacman -R $(pacman -Qtdq)' - also remove orphans/unnecessary packages (I think)
 'pacman -Rcns' - completely remove package and dependancies
@@ -40,18 +39,12 @@ manually import from keyserver:
 -Files-
 lf - file manager
 nikki_drive - open my T7 drive
-
--System Monitoring-
-htop - useful resource monitoring tool 
+chmod +x filename.jpg - make files executable
+chmod 644 filename.jpg - make files not executable anymore
 
 -Screen Savers-
 unimatrix - the matrix thingy
 tty-clock - clock!
 pipes - pipes
+rainfall - rain!!
 
--Games-
-//bastet - tetris - nevermind this one failed to build lol
-2048 - self explanatory
-//ninvaders - invaders in cli - this one failed too :(
-nethack - dungeon exploration game - this one is GUI btw
-nsnake - snake but n

@@ -29,3 +29,7 @@ alias tty-clock='tty-clock -c -C 4'
 # pfetch
 pfetch
 export PATH=$PATH:/home/nikki/.spicetify
+
+# setting defaults :)
+export EDITOR='vim'
+export VISUAL='vim'
