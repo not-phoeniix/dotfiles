@@ -15,6 +15,7 @@ spotifyd - configure the spotifyd backend thingy
 
 -Wifi-
 connmanctl - connection manager control in terminal
+nmcli - network manager in terminal too !
 
 -Packages-
 yay - aur helper
@@ -25,6 +26,9 @@ pacman - you know what this is
 'pacman -Rns' - completely remove package and dependancies without the clear command
 'pacman -Qi | egrep '^(Name|Installed)' | cut -f2 -d':' | tr '\nK' ' \n' | sort -nrk 2 | less' - list all packages by size
 'pacman -Qi' - list a certain package's information
+'pacman -S --overwrite \* <package_name>' in case something goes wrong and it says "package_name error, something something exists in filesystem"
+example error for above command ^^
+"python-platformdirs: /usr/lib/python3.10/site-packages/platformdirs/windows.py exists in filesystem"
 
 -Keys-
 if a key doesn't import, try doing this:

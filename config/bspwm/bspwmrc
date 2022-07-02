@@ -16,11 +16,11 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 picom --experimental-backends &
 xrandr --output HDMI-0 --mode 2560x1440 --rate 143.91 &
 xsetroot -cursor_name left_ptr &
-feh --bg-fill --geometry +0-0 $HOME/Pictures/Wallpapers/mountainssss.jpg &
+feh --bg-fill --geometry +0-0 $HOME/Pictures/Wallpapers/codeWal.png &
 
 # start polybar
 $HOME/.config/polybar/launch.sh &
 
 # start openrgb 
-$HOME/.config/OpenRGB/launch.sh
+# $HOME/.config/OpenRGB/launch.sh
  
