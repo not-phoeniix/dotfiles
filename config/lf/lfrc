@@ -39,9 +39,6 @@ map <enter> shell
 map <delete> trash
 map <f-12> delete
 
-map G
-map gG bottom
-
 map gd cd ~/Downloads
 map gt cd ~/.trash
 map gc cd ~/.config
