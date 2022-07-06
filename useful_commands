@@ -45,6 +45,7 @@ lf - file manager
 nikki_drive - open my T7 drive
 chmod +x filename.jpg - make files executable
 chmod 644 filename.jpg - make files not executable anymore
+sudo du -sh /directory_name - output the size of a directory
 
 -Screen Savers-
 unimatrix - the matrix thingy

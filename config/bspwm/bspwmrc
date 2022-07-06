@@ -14,13 +14,13 @@ bspc config normal_border_color       "#4c566a"
 # autostart?
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom --experimental-backends &
-xrandr --output HDMI-0 --mode 2560x1440 --rate 143.91 &
+#xrandr --output HDMI-0 --mode 2560x1440 --rate 143.91 &
 xsetroot -cursor_name left_ptr &
-feh --bg-fill --geometry +0-0 $HOME/Pictures/Wallpapers/codeWal.png &
+feh --bg-fill --geometry +0-0 $HOME/Pictures/Wallpapers/14.jpg &
+dunst &
 
 # start polybar
 $HOME/.config/polybar/launch.sh &
 
 # start openrgb 
 # $HOME/.config/OpenRGB/launch.sh
- 
