@@ -20,11 +20,11 @@ super + Escape
 
 # full screenshot
 super + Print
-	maim ~/Pictures/Screenshots/screenshot_$(date +%Y%m%d_%H%M%S).png
+	maim --hidecursor -o ~/Pictures/Screenshots/screenshot_$(date +%Y%m%d_%H%M%S).png
 
 # rectangular screenshot
 super + shift + Print
-	maim -s ~/Pictures/Screenshots/screenshot_$(date +%Y%m%d_%H%M%S).png 
+	maim --hidecursor -o -s ~/Pictures/Screenshots/screenshot_$(date +%Y%m%d_%H%M%S).png 
 
 #
 # media keys
@@ -57,8 +57,6 @@ super + shift + {q,r}
 	bspc {quit,wm -r}
 
 # close 
-super + shift + c
-	bspc node -c
 alt + F4
 	bspc node -c
 super + q

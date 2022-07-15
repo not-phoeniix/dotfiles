@@ -25,6 +25,7 @@ alias up='cd ..'
 alias q='exit'
 alias c='clear'
 alias tty-clock='tty-clock -c -C 4'
+alias lf='lfrun'
 
 # pfetch
 pfetch

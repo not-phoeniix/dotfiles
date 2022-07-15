@@ -48,3 +48,5 @@ tty-clock - clock!
 pipes - pipes
 rainfall - rain!!
 
+-Steam-
+PROTON_LOG=1 %command% - put in launch options to enable logs in `~/steam-$GAMEID.log`

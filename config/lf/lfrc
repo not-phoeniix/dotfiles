@@ -39,11 +39,9 @@ map <enter> shell
 map <delete> trash
 map <f-12> delete
 
-map G
-map gG bottom
-
 map gd cd ~/Downloads
 map gt cd ~/.trash
 map gc cd ~/.config
 map g. cd ~/.dotfiles
-map gm cd ~/.minecraft
+map gm cd /mnt
+map gM cd ~/.minecraft
