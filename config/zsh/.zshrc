@@ -24,6 +24,7 @@ alias ls='ls --color=auto'
 alias up='cd ..'
 alias q='exit'
 alias c='clear'
+alias h='cd'
 alias tty-clock='tty-clock -c -C 4'
 alias lf='lfrun'
 
@@ -34,3 +35,6 @@ export PATH=$PATH:/home/nikki/.spicetify
 # setting defaults :)
 export EDITOR='vim'
 export VISUAL='vim'
+
+# pebble :)
+export PATH=~/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH
