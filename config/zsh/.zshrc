@@ -24,6 +24,7 @@ alias ls='ls --color=auto'
 alias up='cd ..'
 alias q='exit'
 alias c='clear'
+alias h='cd'
 alias tty-clock='tty-clock -c -C 4'
 alias lf='lfrun'
 
@@ -36,3 +37,4 @@ export EDITOR='vim'
 export VISUAL='vim'
 export TERM="alacritty"
 export TERMINAL="alacritty"
+
