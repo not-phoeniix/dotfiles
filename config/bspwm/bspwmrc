@@ -3,7 +3,7 @@
 # workspaces
 bspc monitor -d I II III IV V
 
-#other stuff
+# other stuff
 bspc config border_width              3
 bspc config window_gap                20
 bspc config split_ratio               0.6
@@ -17,6 +17,7 @@ picom --experimental-backends &
 xrandr --output HDMI-0 --mode 2560x1440 --rate 143.91 &
 xsetroot -cursor_name left_ptr &
 feh --bg-fill --geometry +0-0 $HOME/Pictures/Wallpapers/mountainssss.jpg &
+#feh --bg-fill --geometry +0-0 $HOME/Documents/Aseprite/exports/new_rice.png &
 
 # start polybar
 $HOME/.config/polybar/launch.sh &
@@ -24,3 +25,7 @@ $HOME/.config/polybar/launch.sh &
 # start openrgb 
 $HOME/.config/OpenRGB/launch.sh
  
+# rules
+#bspc rule -a minecraft-launcher desktop='^3' state=floating
+#bspc rule -a steam desktop='^2'
+

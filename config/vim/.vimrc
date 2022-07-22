@@ -20,7 +20,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ap/vim-css-color'
-Plugin 'arcticicestudio/nord-vim'
 
 "all the plugins must go before this line, this deinitializes vundle
 call vundle#end()
@@ -38,5 +37,5 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:airline_theme='base16_nord'
+"let g:airline_theme='default'
 

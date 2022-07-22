@@ -34,3 +34,5 @@ export PATH=$PATH:/home/nikki/.spicetify
 # setting defaults :)
 export EDITOR='vim'
 export VISUAL='vim'
+export TERM="alacritty"
+export TERMINAL="alacritty"
