@@ -6,6 +6,10 @@
 super + Return
 	alacritty
 
+# file explorer
+super + shift + Return
+	thunar
+
 # program launcher
 super + space 
 	rofi -show run 

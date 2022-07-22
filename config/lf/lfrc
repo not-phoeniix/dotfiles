@@ -45,3 +45,4 @@ map gc cd ~/.config
 map g. cd ~/.dotfiles
 map gm cd /mnt
 map gM cd ~/.minecraft
+map g/ cd /

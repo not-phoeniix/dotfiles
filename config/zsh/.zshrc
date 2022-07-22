@@ -35,6 +35,6 @@ export PATH=$PATH:/home/nikki/.spicetify
 # setting defaults :)
 export EDITOR='vim'
 export VISUAL='vim'
+export TERM="alacritty"
+export TERMINAL="alacritty"
 
-# pebble :)
-export PATH=~/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH

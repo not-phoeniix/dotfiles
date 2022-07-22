@@ -55,3 +55,6 @@ rainfall - rain!!
 
 -Steam-
 PROTON_LOG=1 %command% - put in launch options to enable logs in `~/steam-$GAMEID.log`
+
+-Gaming-
+mangohud %command% - put this in launch options to enable MangoHud resource logger
